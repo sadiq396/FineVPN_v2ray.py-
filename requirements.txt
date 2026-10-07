@@ -5,4 +5,10 @@ requests
 httpx
 pydantic
 jinja2
-tzdata
+gunicorn
+aiofiles
+cryptography
+qrcode[pil]
+Pillow
+psutil
+websockets
