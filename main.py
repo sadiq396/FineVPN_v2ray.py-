@@ -66,7 +66,7 @@ app = FastAPI(title=BRAND_NAME, docs_url=None, redoc_url=None)
 # Import and include xhttp_siz10 router - deferred until globals are defined
 xhttp_router = None
 
-PANEL_PORT = 8080
+PANEL_PORT = int(os.environ.get("PORT", 8080))
 
 
 def _env_port(default: int = PANEL_PORT) -> int:
